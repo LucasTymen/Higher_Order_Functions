@@ -14,9 +14,6 @@ const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
   }
 };
 
-// Write your code below
-
-
 //  ### ### --- anonymous function (a function without a name) --- ### ###
 higherOrderFunc(() => {
   for (let i = 0; i <= 10; i++){
@@ -35,3 +32,20 @@ const checkConsistentOutput = (func, val) => {
   return checkA === checkB ? func(val) : "inconsistent results";
 };
 console.log(checkConsistentOutput(addTwo, 34))
+
+// ###############################
+/*
+    Abstraction allows us to write complicated code in a way that’s easy to reuse,
+    debug, and understand for human readers.
+
+    We can work with functions the same way we work with any other type of data,
+    including reassigning them to new variables.
+
+    JavaScript functions are first-class objects, so they have properties and
+    methods like any other object.
+
+    Functions can be passed into other functions as parameters.
+
+    A higher-order function is a function that either accepts functions as
+    parameters, returns a function, or both.
+*/
